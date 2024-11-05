@@ -23,8 +23,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd contact-identification-service
+   git clone https://github.com/ashutosh029/assignment.git
+   cd assignment
    ```
 
 2. **Install dependencies:**
@@ -35,14 +35,7 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-3. **Create a `.env` file:**
-
-   Create a `.env` file in the root of your project directory and add the following environment variables:
-
-   ```plaintext
-   MONGODB_URI=mongodb://<username>:<password>@localhost:27017/<dbname>
-   PORT=3000
-   ```
+3. **Update Credentilals:**
 
    Replace `<username>`, `<password>`, and `<dbname>` with your MongoDB credentials and desired database name.
 
@@ -50,7 +43,7 @@ Before you begin, ensure you have the following installed:
 
 - `db.js`: Responsible for connecting to the MongoDB database.
 - `Contact.js`: Mongoose model defining the structure of the Contact document.
-- `server.js`: Main file where the Express server is set up and the API endpoint is defined.
+- `index.js`: Main file where the Express server is set up and the API endpoint is defined.
 
 ## Running the Service
 
@@ -67,7 +60,7 @@ Before you begin, ensure you have the following installed:
    Execute the following command in your project directory:
 
    ```bash
-   node server.js
+   node index.js
    ```
 
    You should see output indicating that the server is running:
